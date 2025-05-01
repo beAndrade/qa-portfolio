@@ -16,4 +16,4 @@ Seja bem-vindo ao meu portfólio de Quality Assurance! Sou estudante de TI espec
 ## Contato
 
 - [LinkedIn](https://www.linkedin.com/in/andradebernardo/)
-- Email: bernardo_dev@outlook.com
+- Email: <bernardo_dev@outlook.com>

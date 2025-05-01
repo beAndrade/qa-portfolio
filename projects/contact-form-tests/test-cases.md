@@ -12,7 +12,7 @@
   4. Clicar no botão de Enviar.
 - **Dados**: Nome: Ana Silva, Email: <ana.silva@email.com>, Mensagem: Eu gostaria de reservar uma mesa para 4 pessoas neste final de semana.
 - **Resultado Esperado**: Uma mensagem de sucesso aparece: “Obrigado pela sua mensagem! Entraremos em contato em breve.”
-- **Status**: [Preencher após o teste]
+- **Status**: _Passou_ ✅ - Mensagem de sucesso exibida conforme esperado.
 
 ## Caso de Teste 2: Envio de Formulário com Campo Nome Vazio
 
@@ -29,7 +29,7 @@
     - E-mail: <ana.silva@email.com>,
     - Mensagem: Por favor, entre em contato sobre catering.
 - **Resultado Esperado**: Uma mensagem de erro aparece: “O campo Nome é obrigatório.”
-- **Status**: _Reprovado_ ❌
+- **Status**: _Falhou_ ❌ - Formulário enviado sem mensagem de erro (ver Bug 1).
 
 ## Caso de Teste 3: Envio de Formulário com E-mail Inválido
 
@@ -46,7 +46,7 @@
     - E-mail: joao@invalid,
     - Mensagem: Você pode compartilhar o menu?
 - **Resultado** Esperado: Uma mensagem de erro aparece: “Por favor, insira um endereço de e-mail válido.”
-- **Status**: [A ser preenchido após o teste]
+- **Status**: _Falhou_ ❌ - Formulário aceita um e-mail inválido sem exibir uma mensagem de erro (ver Bug 2).
 
 ## Caso de Teste 4: Envio de Formulário com Mensagem Excedendo Limite de Caracteres
 
@@ -63,7 +63,7 @@
     - E-mail: <maria.lima@email.com>,
     - Mensagem: [texto com 501 caracteres]
 - **Resultado Esperado**: Uma mensagem de erro aparece: “A mensagem não pode exceder 500 caracteres.”
-- **Status**: [A ser preenchido após o teste]
+- **Status**: _Falhou_ ❌ - O formulário de contato permite o envio de uma mensagem com mais de 500 caracteres sem exibir uma mensagem de erro
 
 ## Caso de Teste 5: Teste de Usabilidade do Botão Enviar com Campos Vazios
 
@@ -76,7 +76,7 @@
   - **Dados**:
     - Nenhum
 - **Resultado Esperado**: O botão Enviar está desabilitado (cinza) ou, ao clicar, exibe: “Por favor, preencha todos os campos obrigatórios.”
-  Status: [A ser preenchido após o teste]
+- **Status**: _Passou_ ✅ - O botão Enviar está desabilitado e ao clicar, exibe mensagem para preencher os campos obrigatórios.
 
 ## Caso de Teste 6: Teste de Responsividade em Dispositivos Móveis
 
@@ -98,4 +98,21 @@
     - E-mail: <lucas.costa@email.com>,
     - Mensagem: Ótimo café!
 - **Resultado Esperado**: O formulário está totalmente visível, os campos estão devidamente alinhados, e o envio funciona como no TC_Contact_001.
-- **Status**: [A ser preenchido após o teste]
+- **Status**: _Passou_ ✅ - Responsividade funcionando como esperado.
+
+## Caso de Teste 7: Envio de Formulário com Caracteres Especiais no Nome
+
+- **ID**: CT_Contato_007
+- **Título**: Validar erro para caracteres especiais no campo Nome
+- **Pré-condições**: O usuário está na página do formulário de contato.
+- **Passos**:
+  1. Insira "José@123" no campo Nome.
+  2. Insira "<jose@email.com>" no campo E-mail.
+  3. Insira "Teste de caracteres." no campo Mensagem.
+  4. Clique no botão Enviar.
+  - **Dados**:
+    - Nome: José@123
+    - E-mail: <jose@email.com>
+    - Mensagem: Teste de caracteres.
+- **Resultado Esperado**: Uma mensagem de erro aparece: “O campo Nome deve conter apenas letras.”
+- **Status**: _Passou_ ✅ - Mensagem de erro aparece como esperado.

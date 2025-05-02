@@ -10,7 +10,10 @@
   2. Digitar "<ana.silva@email.com>" no campo de Email.
   3. Digitar "Eu gostaria de reservar uma mesa para 4 pessoas neste final de semana." no campo de Mensagem.
   4. Clicar no botão de Enviar.
-- **Dados**: Nome: Ana Silva, Email: <ana.silva@email.com>, Mensagem: Eu gostaria de reservar uma mesa para 4 pessoas neste final de semana.
+  - **Dados**:
+    - Nome: Ana Silva
+    - Email: <ana.silva@email.com>
+    - Mensagem: Eu gostaria de reservar uma mesa para 4 pessoas neste final de semana.
 - **Resultado Esperado**: Uma mensagem de sucesso aparece: “Obrigado pela sua mensagem! Entraremos em contato em breve.”
 - **Status**: _Passou_ ✅ - Mensagem de sucesso exibida conforme esperado.
 
@@ -25,9 +28,9 @@
   3. Insira "Por favor, entre em contato sobre catering." no campo Mensagem.
   4. Clique no botão Enviar.
   - **Dados**:
-    - Nome: [vazio],
-    - E-mail: <ana.silva@email.com>,
-    - Mensagem: Por favor, entre em contato sobre catering.
+    - Nome: [vazio]
+    - E-mail: <ana.silva@email.com>
+    - Mensagem: Eu gostaria de reservar uma mesa para 4 pessoas neste final de semana.
 - **Resultado Esperado**: Uma mensagem de erro aparece: “O campo Nome é obrigatório.”
 - **Status**: _Falhou_ ❌ - Formulário enviado sem mensagem de erro (ver Bug 1).
 

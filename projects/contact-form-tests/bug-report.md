@@ -16,13 +16,11 @@
 - **Resultado Esperado**: Uma mensagem de erro deveria aparecer abaixo do campo Nome: “O campo Nome é obrigatório,” e o formulário não deveria ser enviado.
 - **Severidade**: Média (os usuários podem contornar a validação, mas o problema não causa perda de dados ou falha do sistema).
 - **Ambiente**:
-
   - Navegador: Chrome (Versão 126.0.6478.127)
   - Dispositivo: Desktop (Windows 11, resolução 1920x1080)
   - URL: <www.examplecafe.com/contact>
-
 - **Captura de Tela**:
-  ![Error Screenshot](screenshots/bugForm.png)
+  ![Captura de tela de erro](screenshots/bug-ct-contato002.png)
 
   > _**Legenda**: "A captura de tela mostra o formulário enviado com o campo Nome vazio, sem exibir mensagem de erro, evidenciando o problema de validação."_
 
@@ -49,8 +47,10 @@
   - Dispositivo: Desktop (Windows 11, resolução 1920x1080)
   - URL: <www.examplecafe.com/contact>
 - **Captura de Tela**:
-  ![Captura de Tela de E-mail Inválido] **Adicionar Captura de tela!**
+  ![Captura de Tela de E-mail Inválido](screenshots/bug-ct-contato003.png)
+
   > **Legenda**: A captura mostra o formulário enviado com e-mail inválido, sem mensagem de erro.
+
 - **Notas Adicionais**:
   - O problema foi reproduzido no Edge, sugerindo uma falha geral na validação de e-mail.
   - A ausência de validação pode permitir dados incorretos no backend.
@@ -73,8 +73,10 @@
   - Dispositivo: Desktop (Windows 11, resolução 1920x1080)
   - URL: <www.examplecafe.com/contact>
 - **Captura de Tela**:
-  ![Captura de Tela de Mensagem Longa] **Adicionar Captura de tela!**
+  ![Captura de Tela de Mensagem Longa](screenshots/bug-ct-contato004.png)
+
   > **Legenda**: A captura mostra o formulário enviado com uma mensagem de 501 caracteres, sem exibir mensagem de erro, evidenciando a falha na validação.
+
 - **Notas Adicionais**:
   - O problema foi reproduzido no Firefox (Versão 128.0), confirmando uma falha consistente em múltiplos navegadores.
   - Usando as Ferramentas de Desenvolvedor, notei que o campo Mensagem não possui validação de comprimento no front-end, permitindo a submissão de textos longos.

@@ -8,7 +8,7 @@ Sou estudante de Tecnologia da Informação na UNESA, com foco em Quality Assura
 
 ## Projetos
 
-- **[Contact Form Testing](projects/contact-form-tests/test-cases.md)**: Casos de teste para um formulário de contato, abrangendo testes funcionais, de casos extremos e de responsividade.
+- **[Testes de Formulário de Contato](projects/contact-form-tests/test-cases.md)**: 7 Casos de teste e 3 relatórios de bugs para um formulário de contato com capturas de tela, abrangendo testes funcionais, de casos extremos e de responsividade.
 <!-- - **[Search Bar Testing](projects/search-bar-tests/test-cases.md)**: Casos de teste para uma funcionalidade de busca, com foco em usabilidade e tratamento de erros.  -->
 
 ## Habilidades 🚀

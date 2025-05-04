@@ -10,7 +10,7 @@
   1. Acesse a página do formulário de contato (<www.examplecafe.com/contact>).
   1. Deixe o campo Nome vazio.
   1. Insira um e-mail válido (ex.: "<ana.silva@email.com>") no campo E-mail.
-  1. Insira uma mensagem válida (ex.: "Por favor, entre em contato sobre catering.") no campo Mensagem.
+  1. Insira uma mensagem válida (ex.: "Eu gostaria de reservar uma mesa para 4 nesta fim de semana.") no campo Mensagem.
   1. Clique no botão Enviar.
 - **Resultado Obtido**: O formulário é enviado com sucesso, e uma mensagem de sucesso aparece: “Obrigado pela sua mensagem! Entraremos em contato em breve.”
 - **Resultado Esperado**: Uma mensagem de erro deveria aparecer abaixo do campo Nome: “O campo Nome é obrigatório,” e o formulário não deveria ser enviado.
@@ -49,7 +49,7 @@
 - **Captura de Tela**:
   ![Captura de Tela de E-mail Inválido](screenshots/bug-ct-contato003.png)
 
-  > **Legenda**: A captura mostra o formulário enviado com e-mail inválido, sem mensagem de erro.
+  > **Legenda**: "A captura mostra o formulário enviado com e-mail inválido, sem mensagem de erro."
 
 - **Notas Adicionais**:
   - O problema foi reproduzido no Edge, sugerindo uma falha geral na validação de e-mail.
@@ -75,7 +75,7 @@
 - **Captura de Tela**:
   ![Captura de Tela de Mensagem Longa](screenshots/bug-ct-contato004.png)
 
-  > **Legenda**: A captura mostra o formulário enviado com uma mensagem de 501 caracteres, sem exibir mensagem de erro, evidenciando a falha na validação.
+  > **Legenda**: "A captura mostra o formulário enviado com uma mensagem de 501 caracteres, sem exibir mensagem de erro, evidenciando a falha na validação."
 
 - **Notas Adicionais**:
   - O problema foi reproduzido no Firefox (Versão 128.0), confirmando uma falha consistente em múltiplos navegadores.

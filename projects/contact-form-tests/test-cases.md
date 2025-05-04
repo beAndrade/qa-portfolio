@@ -1,4 +1,4 @@
-# Casos de teste para Contact Form - Example Cafe
+# Casos de teste para Formulário de Contato - Example Cafe
 
 ## Caso de Teste 1: Enviar formulário com entradas válidas
 
@@ -25,7 +25,7 @@
 - **Passos**:
   1. Deixe o campo Nome vazio.
   2. Insira "<ana.silva@email.com>" no campo E-mail.
-  3. Insira "Por favor, entre em contato sobre catering." no campo Mensagem.
+  3. Insira "Eu gostaria de reservar uma mesa para 4 pessoas neste final de semana." no campo Mensagem.
   4. Clique no botão Enviar.
   - **Dados**:
     - Nome: [vazio]
@@ -45,8 +45,8 @@
   1. Insira "Você pode compartilhar o menu?" no campo Mensagem.
   1. Clique no botão Enviar.
   - **Dados**:
-    - Nome: João Souza,
-    - E-mail: joao@invalid,
+    - Nome: João Souza
+    - E-mail: joao@invalid
     - Mensagem: Você pode compartilhar o menu?
 - **Resultado** Esperado: Uma mensagem de erro aparece: “Por favor, insira um endereço de e-mail válido.”
 - **Status**: _Falhou_ ❌ - Formulário aceita um e-mail inválido sem exibir uma mensagem de erro (ver Bug 2).
@@ -62,11 +62,11 @@
   1. Insira uma mensagem com 501 caracteres (ex.: repetir “Mensagem de teste ” até exceder 500 caracteres).
   1. Clique no botão Enviar.
   - **Dados**:
-    - Nome: Maria Lima,
-    - E-mail: <maria.lima@email.com>,
+    - Nome: Maria Lima
+    - E-mail: <maria.lima@email.com>
     - Mensagem: [texto com 501 caracteres]
 - **Resultado Esperado**: Uma mensagem de erro aparece: “A mensagem não pode exceder 500 caracteres.”
-- **Status**: _Falhou_ ❌ - O formulário de contato permite o envio de uma mensagem com mais de 500 caracteres sem exibir uma mensagem de erro
+- **Status**: _Falhou_ ❌ - O formulário de contato permite o envio de uma mensagem com mais de 500 caracteres sem exibir uma mensagem de erro (ver Bug 3).
 
 ## Caso de Teste 5: Teste de Usabilidade do Botão Enviar com Campos Vazios
 
@@ -92,15 +92,15 @@
   1. Acesse o formulário de contato em um dispositivo móvel ou use as Ferramentas de Desenvolvedor para simular um viewport móvel.
   1. Verifique se todos os campos e o botão Enviar estão visíveis e acessíveis.
   1. Preencha todos os campos.
-     1. Insira "Lucas Costa" no campo Nome,
-     2. "<lucas.costa@email.com>" no campo E-mail,
+     1. Insira "Lucas Costa" no campo Nome
+     2. "<lucas.costa@email.com>" no campo E-mail
      3. "Ótimo café!" no campo Mensagem.
   1. Clique no botão Enviar.
   - **Dados**:
-    - Nome: Lucas Costa,
-    - E-mail: <lucas.costa@email.com>,
+    - Nome: Lucas Costa
+    - E-mail: <lucas.costa@email.com>
     - Mensagem: Ótimo café!
-- **Resultado Esperado**: O formulário está totalmente visível, os campos estão devidamente alinhados, e o envio funciona como no TC_Contact_001.
+- **Resultado Esperado**: O formulário está totalmente visível, os campos estão devidamente alinhados, e o envio funciona como no CT_Contato_001.
 - **Status**: _Passou_ ✅ - Responsividade funcionando como esperado.
 
 ## Caso de Teste 7: Envio de Formulário com Caracteres Especiais no Nome

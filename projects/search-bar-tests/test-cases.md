@@ -1,6 +1,6 @@
 # Casos de Teste para Barra de Busca - Example Cafe
 
-> **Nota**: "Estes casos de teste demonstram minha capacidade de criar cenários de teste abrangentes, com foco em funcionalidade, usabilidade e tratamento de erros, apoiado pelo meu conhecimento em front-end para avaliar a experiência do usuário."
+> _**Nota**: "Estes casos de teste demonstram minha capacidade de criar cenários de teste abrangentes, com foco em funcionalidade, usabilidade e tratamento de erros, apoiado pelo meu conhecimento em front-end para avaliar a experiência do usuário."_
 
 ## Caso de Teste 1: Busca com Termo Válido
 

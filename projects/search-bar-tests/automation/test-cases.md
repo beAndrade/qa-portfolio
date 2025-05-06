@@ -1,6 +1,6 @@
 # Casos de Teste Automatizados para Barra de Busca - Example Cafe
 
-> **Nota**: "Estes cenários de teste automatizados com Cypress demonstram minha capacidade de combinar QA com automação, verificando funcionalidade, usabilidade e tratamento de erros. Meu conhecimento em front-end foi aplicado para criar asserções visuais e comportamentais precisas."
+> _**Nota**: "Estes cenários de teste automatizados com Cypress demonstram minha capacidade de combinar QA com automação, verificando funcionalidade, usabilidade e tratamento de erros. Meu conhecimento em front-end foi aplicado para criar asserções visuais e comportamentais precisas."_
 
 ## Caso de Teste 1: Busca com Termo Válido (Automação)
 

@@ -4,7 +4,7 @@ Seja bem-vindo ao meu portfólio de Quality Assurance! Sou estudante de TI espec
 
 ## Sobre Mim 👤
 
-Sou estudante de Tecnologia da Informação na UNESA, com foco em Quality Assurance e interesse em front-end. Tenho conhecimentos básicos em programação (JavaScript, HTML/CSS) e estou aprendendo ferramentas como Cypress para automação de testes e Postman para testes de API.
+Sou estudante de Tecnologia da Informação na UNESA, com foco em Quality Assurance e interesse em front-end. Tenho conhecimentos básicos em programação (JavaScript, HTML/CSS) e estou aprendendo ferramentas como Cypress e Appium para automação de testes e Postman para testes de API.
 
 ## Projetos 💻
 

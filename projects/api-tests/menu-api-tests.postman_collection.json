@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "f3627323-2861-484c-ae53-3f25a2ff2024",
+		"name": "Exemple Cafe API Tests",
+		"description": "Coleção de testes para a API do Example Cafe, cobrindo endpoints /menu e /reservations. Criada para validar funcionalidade, erros e segurança.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8939528"
+	},
+	"item": [
+		{
+			"name": "CT_API_001: Listar Itens do Menu",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response contains menu items\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.items).to.include(\"Café Expresso\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.examplecafe.com/menu",
+					"protocol": "https",
+					"host": [
+						"api",
+						"examplecafe",
+						"com"
+					],
+					"path": [
+						"menu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CT_API_002: Parâmetro Inválido",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"pm.test(\"Error message for invalid category\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.error).to.equal(\"Categoria inválida. Use 'bebidas' ou 'comidas'.\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.examplecafe.com/menu?category=invalid123",
+					"protocol": "https",
+					"host": [
+						"api",
+						"examplecafe",
+						"com"
+					],
+					"path": [
+						"menu"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "invalid123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CT_API_003: Criar Reserva Válida",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"pm.test(\"Reservation created successfully\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.message).to.equal(\"Reserva criada com sucesso\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Ana Silva\",\r\n  \"email\": \"ana.silva@email.com\",\r\n  \"date\": \"2025-06-15\",\r\n  \"time\": \"19:00\",\r\n  \"guests\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.examplecafe.com/reservations",
+					"protocol": "https",
+					"host": [
+						"api",
+						"examplecafe",
+						"com"
+					],
+					"path": [
+						"reservations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CT_API_004: Criar Reserva com E-mail Inválido",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"pm.test(\"Error message for invalid email\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.error).to.equal(\"E-mail inválido. Forneça um endereço de e-mail válido.\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"João Souza\",\r\n  \"email\": \"joao.invalid\",\r\n  \"date\": \"2025-06-15\",\r\n  \"time\": \"19:00\",\r\n  \"guests\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.examplecafe.com/reservations",
+					"protocol": "https",
+					"host": [
+						"api",
+						"examplecafe",
+						"com"
+					],
+					"path": [
+						"reservations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CT_API_005: Acessar Endpoint Inexistente",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"pm.test(\"Error message for invalid endpoint\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.error).to.equal(\"Endpoint não encontrado.\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.examplecafe.com/invalid-endpoint",
+					"protocol": "https",
+					"host": [
+						"api",
+						"examplecafe",
+						"com"
+					],
+					"path": [
+						"invalid-endpoint"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

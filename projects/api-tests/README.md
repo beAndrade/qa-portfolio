@@ -13,3 +13,8 @@
 1. Importe a coleção `menu-api-tests.postman_collection.json` no Postman.
 2. Configure a URL base (https://api.examplecafe.com).
 3. Execute cada requisição e verifique os testes automatizados.
+
+## Notas
+
+- A API é fictícia. Para testes reais, substitua a URL base por uma API pública (ex.: jsonplaceholder.typicode.com).
+- Os scripts de teste validam status HTTP e conteúdo das respostas JSON.

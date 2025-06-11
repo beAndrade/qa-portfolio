@@ -20,7 +20,7 @@
   - Dispositivo: Desktop (Windows 11, resolução 1920x1080)
   - URL: <www.examplecafe.com/contact>
 - **Captura de Tela**:
-  ![Captura de tela de erro](screenshots/bug-ct-contato002.png)
+  ![Captura de tela de erro](/projects/contact-form-tests/screenshots/bug-CT_002.png)
 
   > _**Legenda**: "A captura de tela mostra o formulário enviado com o campo Nome vazio, sem exibir mensagem de erro, evidenciando o problema de validação."_
 
@@ -47,7 +47,7 @@
   - Dispositivo: Desktop (Windows 11, resolução 1920x1080)
   - URL: <www.examplecafe.com/contact>
 - **Captura de Tela**:
-  ![Captura de Tela de E-mail Inválido](screenshots/bug-ct-contato003.png)
+  ![Captura de Tela de E-mail Inválido](/projects/contact-form-tests/screenshots/bug-CT_003.png)
 
   > **Legenda**: "A captura mostra o formulário enviado com e-mail inválido, sem mensagem de erro."
 
@@ -73,7 +73,7 @@
   - Dispositivo: Desktop (Windows 11, resolução 1920x1080)
   - URL: <www.examplecafe.com/contact>
 - **Captura de Tela**:
-  ![Captura de Tela de Mensagem Longa](screenshots/bug-ct-contato004.png)
+  ![Captura de Tela de Mensagem Longa](/projects/contact-form-tests/screenshots/bug-CT_004.png)
 
   > **Legenda**: "A captura mostra o formulário enviado com uma mensagem de 501 caracteres, sem exibir mensagem de erro, evidenciando a falha na validação."
 
